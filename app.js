@@ -7,7 +7,7 @@ function handleRequest(request, response) {
   console.log(request.url);
 
   if (request.url === '/hola') {
-    response.write('Hola que tal');
+    response.write('Hola que ');
     response.end();
   }
 
