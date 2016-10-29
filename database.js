@@ -1,15 +1,6 @@
 const pg = require('pg');
 
-var config = {
-  user: 'nat',
-  database: 'facebook',
-  password: '',
-  host: 'localhost',
-  port: 5432,
-  max: 10,
-  idleTimeoutMillis: 30000,
-};
-
+var config = require('./config.js');
 var pool = new pg.Pool(config);
 
 pool.connect( function (err, client, done) {
