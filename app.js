@@ -22,7 +22,7 @@ function handleRequest(request, response) {
   }
 
   if (reques.url === '/blanco') {
-    response.write('blaco');    
+    response.write('blaco');
     response.end();
   }
 
@@ -43,7 +43,9 @@ var server = http.createServer(handleRequest);
 // el servidor ya esté escuchando (callback)
 server.listen(port, function() {
   console.log('Server is listening at  http://localhost:' + port);
+  console.log('Holi');
 });
+
 
 
 
