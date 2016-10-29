@@ -22,7 +22,12 @@ function handleRequest(request, response) {
   }
 
   if (reques.url === '/blanco') {
-    response.write('blaco');
+    response.write('blaco');    
+    response.end();
+  }
+
+  if (request.url == '/negro') {
+    response.write('negro');
     response.end();
   }
 
