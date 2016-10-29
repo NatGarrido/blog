@@ -16,6 +16,11 @@ function handleRequest(request, response) {
     response.end();
   }
 
+  if (request.url === '/testing') {
+    response.write('Esto es testing');
+    response.end();
+  }
+
 }
 
 var server = http.createServer(handleRequest);
