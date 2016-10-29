@@ -31,6 +31,10 @@ function handleRequest(request, response) {
     response.end();
   }
 
+  if (request.url == '/nuevo') {
+    response.write('nuevo');
+    response.end();
+  }
 }
 
 var server = http.createServer(handleRequest);
