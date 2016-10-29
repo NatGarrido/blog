@@ -21,6 +21,11 @@ function handleRequest(request, response) {
     response.end();
   }
 
+  if (request.url == '/negro') {
+    response.write('negro');
+    response.end();
+  }
+
 }
 
 var server = http.createServer(handleRequest);
