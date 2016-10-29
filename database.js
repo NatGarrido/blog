@@ -1,10 +1,10 @@
 const pg = require('pg');
 
 var config = {
-  user: 'postgres',
-  database: 'blog',
+  user: 'nat',
+  database: 'facebook',
   password: '',
-  host: 'localhost', 
+  host: 'localhost',
   port: 5432,
   max: 10,
   idleTimeoutMillis: 30000,
@@ -25,7 +25,7 @@ pool.connect( function (err, client, done) {
 		}
 
 		console.log('resultado de la consulta --> ', result.rows);
-		
+
 
 		client.end(function (err) {
 	      if (err) throw err;
